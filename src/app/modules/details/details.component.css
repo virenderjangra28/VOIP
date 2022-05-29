@@ -1,0 +1,52 @@
+.leftmenuBackground {
+    background: #363740;
+}
+.assignedNumber {
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: #151515;
+}
+
+.outerIconPosition {
+    position: relative;
+    left: 20px;
+    top: -1px;
+}
+.innerIconPosition {
+    position: relative;
+    top: -1px;
+    right: 9px;
+}
+
+.addNumberButton {
+    position: relative;
+    right: 11px;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: 'Roboto';
+    color: #343434;
+}
+
+.personalDetails {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color: #343434;
+}
+.marginSpace {
+    position: relative;
+    margin-left: -25px;
+}
+
+.moreOption {
+    position: relative;
+    margin-left: -12px;
+}
+
+.thData {
+    font-weight: 400;
+}
+.thColor {
+    color: #DC0909;
+}

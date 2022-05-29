@@ -1,0 +1,69 @@
+<div class="loginDisplay" *ngIf="isLogin">
+    <div>
+        <span class="headerData">
+            Admin Portal Login
+        </span>
+    </div>
+   
+    <div class="emailPoss">
+        <input type="text" placeholder="Email" [(ngModel)]="loginEmail" class="inputField">
+    </div>
+    <div class="passPoss">
+        <input [type]="!showPwd ? 'Password' : 'text' " placeholder="Password" [(ngModel)]="loginPassword" class="inputField">
+        <div>
+            <span class="forgotPass">
+                Forgot Password
+            </span>
+        </div>
+    </div>
+    <div class="btnPoss">
+        <button class="proceedBtn" (click)="loginSubmit()">Proceed</button>
+    </div>
+    
+    <div>
+       <span class="FTSUser">
+        First time user? 
+        <span (click)="changeMode()">
+            Register Here
+        </span>
+       </span>
+    </div>
+    
+</div>
+
+
+<!-- =========================== SIGNUP PROCESS Start============================ -->
+<div class="loginDisplay" *ngIf="!isLogin">
+    <div>
+        <span class="headerData">
+            Admin Portal Registration
+        </span>
+    </div>
+   
+    <div class="emailPoss inputFieldReg">
+        <input type="tel" placeholder="Phone Number" class="inputFieldForReg">
+        <input type="text" placeholder="Email Id" class="inputFieldForReg">
+    </div>
+    <div class="passPoss inputFieldReg" style="top:140px">
+        <input type="password" placeholder="Craete Password" class="inputFieldForReg">
+        <input type="password" placeholder="Re Type Password" class="inputFieldForReg">
+        <!-- <div>
+            <span class="forgotPass">
+                Forgot Password
+            </span>
+        </div> -->
+    </div>
+    <div class="btnPoss">
+        <button class="proceedBtn" style="position: relative;top: 30px;">Proceed</button>
+    </div>
+    
+    <div>
+       <span class="FTSUser" style=" position: relative;top: 220px">
+        Already Registered? 
+        <span (click)="changeMode()">
+            Login Here
+        </span>
+       </span>
+    </div>
+    
+</div>

@@ -1,0 +1,239 @@
+<body>
+    <div class="wrapper">
+        <app-leftmenu class="leftmenuBackground"></app-leftmenu>
+        <main class="main-container">
+            <div class="main-con-inner">
+                <app-header></app-header>
+                <div class="dasbo-content-container">
+                    <div class="dasbo-content-container-inner">
+                        <div class="apr-top-bar">
+                            <h3>All Approvals</h3>
+                            <div class="tb-sort"><img src="./assets/img/sort-icon.svg"><span>sort</span></div>
+                        </div>
+                        <table class="approval-table table">
+                            <tr>
+                                <th>Details</th>
+                                <th>Employee name</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                           <tr>
+                                <td class="em-detail">
+                                    <div class="em-details-div">
+                                        <div class="ap-em-img"><img src="./assets/img/profile.png"></div>
+                                        
+                                        <div class="img-cont">
+                                            <h5>Contact Email not Linked </h5>
+                                            <p>Updated 1 day ago</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="em-name">
+                                        <h5>Tom Cruise </h5>
+                                        <p>Designation/Department</p>
+                                </td>
+                                <td class="em-date">
+                                    <h5>Tom Cruise </h5>
+                                    <p>Designation/Department</p>
+                                </td>
+                                <td class="em-status-accept">
+                                    <div class="e-st-accept"><div class="acpt-container acpt">Accepted</div>
+                                    <span><img src="./assets/img/downArrow.svg"></span></div>
+                                    <span (click)="openMenu()"><img src="./assets/img/moreOptionIcon.svg">
+                                        <div class="dots_moreOption" *ngIf="isDropDownOpen">
+                                            <ul>
+                                                <li><a routerLink="/details/1">
+                                                    <img src="./assets/img/grayEye.svg">View Master Data
+                                                </a></li>
+                                                <li><a routerLink="/details/1">
+                                                    <img src="./assets/img/callLogIcon.svg">Call Logs
+                                                </a></li>
+                                                <li><a routerLink="/details/1">
+                                                    <img src="./assets/img/greyRecording.svg">Call Recordings
+                                                </a></li>
+                                                <li><a routerLink="/details/1">
+                                                    <img src="./assets/img/assignedNumber.svg">Assigned Numbers
+                                                </a></li>
+                                                <li><a routerLink="/details/1">
+                                                    <img src="./assets/img/greyBlockUnblock.svg">Block/Unblock
+                                                </a></li>
+                                            </ul>
+                                    </div>
+                                    </span>
+                                </td>
+                           </tr>
+                           <tr>
+                            <td class="em-detail">
+                                <div class="em-details-div">
+                                    <div class="ap-em-img"><img src="./assets/img/profile.png"></div>
+                                    
+                                    <div class="img-cont">
+                                        <h5>Contact Email not Linked </h5>
+                                        <p>Updated 1 day ago</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="em-name">
+                                    <h5>Tom Cruise </h5>
+                                    <p>Designation/Department</p>
+                            </td>
+                            <td class="em-date">
+                                <h5>Tom Cruise </h5>
+                                <p>Designation/Department</p>
+                            </td>
+                            <td class="em-status">
+                            <div><span class="acpt">Accept</span>  |  <span class="rjt"> Reject </span>  |  <span class="view"> View </span></div>
+                            </td>
+                       </tr>
+                       <tr>
+                            <td class="em-detail">
+                                <div class="em-details-div">
+                                    <div class="ap-em-img"><img src="./assets/img/profile.png"></div>
+                                    
+                                    <div class="img-cont">
+                                        <h5>Contact Email not Linked </h5>
+                                        <p>Updated 1 day ago</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="em-name">
+                                    <h5>Tom Cruise </h5>
+                                    <p>Designation/Department</p>
+                            </td>
+                            <td class="em-date">
+                                <h5>Tom Cruise </h5>
+                                <p>Designation/Department</p>
+                            </td>
+                            <td class="em-status">
+                            <div><span class="acpt">Accept</span>  |  <span class="rjt"> Reject </span>  |  <span class="view"> View </span></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="em-detail">
+                                <div class="em-details-div">
+                                    <div class="ap-em-img"><img src="./assets/img/profile.png"></div>
+                                    
+                                    <div class="img-cont">
+                                        <h5>Contact Email not Linked </h5>
+                                        <p>Updated 1 day ago</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="em-name">
+                                    <h5>Tom Cruise </h5>
+                                    <p>Designation/Department</p>
+                            </td>
+                            <td class="em-date">
+                                <h5>Tom Cruise </h5>
+                                <p>Designation/Department</p>
+                            </td>
+                            <td class="em-status">
+                            <div><span class="acpt">Accept</span>  |  <span class="rjt"> Reject </span>  |  <span class="view"> View </span></div>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="em-detail">
+                                <div class="em-details-div">
+                                    <div class="ap-em-img"><img src="./assets/img/profile.png"></div>
+                                    
+                                    <div class="img-cont">
+                                        <h5>Contact Email not Linked </h5>
+                                        <p>Updated 1 day ago</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="em-name">
+                                    <h5>Tom Cruise </h5>
+                                    <p>Designation/Department</p>
+                            </td>
+                            <td class="em-date">
+                                <h5>Tom Cruise </h5>
+                                <p>Designation/Department</p>
+                            </td>
+                            <td class="em-status">
+                            <div><span class="acpt">Accept</span>  |  <span class="rjt"> Reject </span>  |  <span class="view"> View </span></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="em-detail">
+                                <div class="em-details-div">
+                                    <div class="ap-em-img"><img src="./assets/img/profile.png"></div>
+                                    
+                                    <div class="img-cont">
+                                        <h5>Contact Email not Linked </h5>
+                                        <p>Updated 1 day ago</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="em-name">
+                                    <h5>Tom Cruise </h5>
+                                    <p>Designation/Department</p>
+                            </td>
+                            <td class="em-date">
+                                <h5>Tom Cruise </h5>
+                                <p>Designation/Department</p>
+                            </td>
+                            <td class="em-status">
+                            <div><span class="acpt">Accept</span>  |  <span class="rjt"> Reject </span>  |  <span class="view"> View </span></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="em-detail">
+                                <div class="em-details-div">
+                                    <div class="ap-em-img"><img src="./assets/img/profile.png"></div>
+                                    
+                                    <div class="img-cont">
+                                        <h5>Contact Email not Linked </h5>
+                                        <p>Updated 1 day ago</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="em-name">
+                                    <h5>Tom Cruise </h5>
+                                    <p>Designation/Department</p>
+                            </td>
+                            <td class="em-date">
+                                <h5>Tom Cruise </h5>
+                                <p>Designation/Department</p>
+                            </td>
+                            <td class="em-status">
+                            <div><span class="acpt">Accept</span>  |  <span class="rjt"> Reject </span>  |  <span class="view"> View </span></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="em-detail">
+                                <div class="em-details-div">
+                                    <div class="ap-em-img"><img src="./assets/img/profile.png"></div>
+                                    
+                                    <div class="img-cont">
+                                        <h5>Contact Email not Linked </h5>
+                                        <p>Updated 1 day ago</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="em-name">
+                                    <h5>Tom Cruise </h5>
+                                    <p>Designation/Department</p>
+                            </td>
+                            <td class="em-date">
+                                <h5>Tom Cruise </h5>
+                                <p>Designation/Department</p>
+                            </td>
+                            <td class="em-status">
+                            <div><span class="acpt">Accept</span>  |  <span class="rjt"> Reject </span>  |  <span class="view"> View </span></div>
+                            </td>
+                        </tr>
+                        </table>
+                        <div class="pagination">
+                            <div class="per-page"><span>Rows per page:</span> <span class="color-4B506D">8</span><span><img src="./assets/img/paginationDownArrow.svg"></span></div>
+                            <div class="pagination-action">
+                                <span>1-8 of 1240</span><span class="previous"><img src="./assets/img/paginationleftArrow.svg"></span><span class="next"><img src="./assets/img/paginationRightArrow.svg"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+</body>

@@ -1,0 +1,59 @@
+.leftmenuBackground {
+    background: #363740;
+}
+.marginSpace {
+    position: relative;
+    margin-left: -25px;
+}
+
+.moreOption {
+    position: relative;
+    margin-left: -12px;
+}
+
+.optionalPopUp {
+    position: absolute;
+    right: 50px;
+}
+
+.createnewSpanOuter {
+    position: absolute;
+    left: 500px;
+    top: 160px;
+}
+.createNewSpanInner {
+    position: relative;
+    left: -17px;
+}
+.createNew {
+    position: relative;
+    left: -197px;
+    top: -2px;
+    font-size: 17.53px;
+    font-weight: 600;
+    color: #1649DA;
+    font-family: 'Roboto';
+}
+
+.removeIcon {
+    position: relative;
+    right: 10px;
+    top: 1px;
+
+}
+.color-F6F4FF {
+    background: #F6F4FF;
+}
+
+.totalEmployees-table .em-detail .img-cont p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Mulish';
+}
+.img-designation {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-family: 'Mulish' !important;
+}

@@ -1,0 +1,81 @@
+.loginDisplay {
+    text-align: center;
+    position: relative;
+    /* border: 2px solid; */
+    width: auto;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 10%;
+    height: 450px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.39) 0%, rgba(236, 241, 255, 0.4475) 48.81%, rgba(106, 142, 247, 0.51) 100%);
+}
+
+.headerData {
+    position: relative;
+    color: #fff;
+    font-size: 32px;
+    top: 55px;
+}
+input {
+    padding: 14px 20px;
+}
+.emailPoss {
+    position: relative;
+    top: 100px;
+}
+
+.passPoss {
+    position: relative;
+    top: 115px;
+}
+.inputFieldReg {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inputField {
+    width: 320px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+.inputFieldForReg {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.forgotPass {
+    position: relative;
+    left: 110px;
+    top: 5px;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'roboto'
+}
+
+.btnPoss {
+    position: relative;
+    top: 150px;
+}
+
+.proceedBtn {
+    border: 1px solid #00C19D;
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    color: #fff;
+    background: #00C19D;
+    height: 50px;
+    width: 320px;
+    font-size: 16px;
+}
+
+.FTSUser {
+    position: relative;
+    top: 200px;
+    color: #fff;
+    margin: 0 auto;
+}
