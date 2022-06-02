@@ -34,19 +34,42 @@ input {
     justify-content: space-evenly;
 }
 
-.inputField {
+.inputEmailField {
     width: 320px;
     height: 50px;
     border-radius: 10px;
     border: 1px solid #fff;
 }
-.inputFieldForReg {
+.inputPassField {
+    width: 320px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+.inputFieldForMobileReg {
     width: 250px;
     height: 50px;
     border-radius: 10px;
     border: 1px solid #fff;
 }
-
+.inputFieldForEmailReg {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+.inputFieldForPassReg {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+.inputFieldForRepeatPassReg {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
 .forgotPass {
     position: relative;
     left: 110px;
@@ -78,4 +101,24 @@ input {
     top: 200px;
     color: #fff;
     margin: 0 auto;
+}
+
+.error {
+    position: relative;
+    animation: shake .1s linear;
+    animation-iteration-count: 3;
+}
+
+@keyframes shake {
+    0% { left: -5px; }
+    100% { right: -5px; }
+}
+.errorText {
+    color: red;
+    position: absolute;
+    left: 30%;
+    text-align: center;
+    width: 36%;
+    top: 20px;
+    
 }

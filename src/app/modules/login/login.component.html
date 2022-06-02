@@ -3,13 +3,16 @@
         <span class="headerData">
             Admin Portal Login
         </span>
+        <span class="errorText" *ngIf="isError">{{errorText}}</span>
     </div>
    
     <div class="emailPoss">
-        <input type="text" placeholder="Email" [(ngModel)]="loginEmail" class="inputField">
+        <input type="text" placeholder="Email" name="loginEmail"
+                [(ngModel)]="loginEmail" class="inputEmailField">
     </div>
     <div class="passPoss">
-        <input [type]="!showPwd ? 'Password' : 'text' " placeholder="Password" [(ngModel)]="loginPassword" class="inputField">
+        <input [type]="!showPwd ? 'Password' : 'text' " placeholder="Password" name="loginPassword"
+                [(ngModel)]="loginPassword" class="inputPassField">
         <div>
             <span class="forgotPass">
                 Forgot Password
@@ -34,27 +37,28 @@
 
 <!-- =========================== SIGNUP PROCESS Start============================ -->
 <div class="loginDisplay" *ngIf="!isLogin">
+   
+
     <div>
         <span class="headerData">
             Admin Portal Registration
         </span>
+        <span class="errorText" *ngIf="isError">{{errorText}}</span>
     </div>
-   
     <div class="emailPoss inputFieldReg">
-        <input type="tel" placeholder="Phone Number" class="inputFieldForReg">
-        <input type="text" placeholder="Email Id" class="inputFieldForReg">
+        <input type="tel" placeholder="Phone Number" name="regMobile" class="inputFieldForMobileReg" 
+                [(ngModel)] = "regMobile" >
+        <input type="text" placeholder="Email Id" name="regEmail" class="inputFieldForEmailReg"
+                [(ngModel)] = "regEmail" >
     </div>
     <div class="passPoss inputFieldReg" style="top:140px">
-        <input type="password" placeholder="Craete Password" class="inputFieldForReg">
-        <input type="password" placeholder="Re Type Password" class="inputFieldForReg">
-        <!-- <div>
-            <span class="forgotPass">
-                Forgot Password
-            </span>
-        </div> -->
+        <input type="password" placeholder="Create Password" name="regPassword" class="inputFieldForPassReg"
+                [(ngModel)] = "regPassword" >
+        <input type="password" placeholder="Re Type Password" name="regConfirmPassword" class="inputFieldForRepeatPassReg"
+                [(ngModel)] = "regConfirmPassword" >
     </div>
     <div class="btnPoss">
-        <button class="proceedBtn" style="position: relative;top: 30px;">Proceed</button>
+        <button class="proceedBtn" style="position: relative;top: 30px;" (click)="registration()">Proceed</button>
     </div>
     
     <div>
